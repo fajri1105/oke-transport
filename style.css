@@ -1,7 +1,5 @@
 
-root{
-    --hijauUtama : rgb(4, 54, 0);
-}
+
 *{
     padding: 0;
     box-sizing: border-box;
@@ -49,7 +47,7 @@ body{
     border-radius: 5px;
     font-weight: bold;
     background-color: rgb(33, 223, 19);
-
+    color: black;
 }
 #home ul li a.login:hover{
     background-color: rgb(52, 255, 38);

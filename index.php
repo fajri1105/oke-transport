@@ -14,11 +14,11 @@
             </div>
             <ul >
                 <li class="head">Menu</li>
-                <li><a href="#Home">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Order</a></li>
-                <li><a href="">Contact</a></li>
-                <li><a href="login.php" class="login">Masuk/Daftar</a></li>
+                <li><a href="#Home">Beranda</a></li>
+                <li><a href="">Tentang</a></li>
+                <li><a href="">Pesan</a></li>
+                <li><a href="">Kontak</a></li>
+                <li><a href="masuk.php" class="login">Masuk/Daftar</a></li>
             </ul>
             <div class="humberger">
                 <span></span><span></span><span></span>
