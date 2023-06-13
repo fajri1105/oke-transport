@@ -17,7 +17,7 @@
                 <li><a href="">About</a></li>
                 <li><a href="">Order</a></li>
                 <li><a href="">Contact</a></li>
-                <li><a href="" class="login">Login</a></li>
+                <li><a href="login.php" class="login">Masuk/Daftar</a></li>
             </ul>
         </nav>
         <main>
