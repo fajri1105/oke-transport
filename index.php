@@ -12,13 +12,17 @@
             <div class="logo">
                 <img src="img/logo.png" alt="logo">
             </div>
-            <ul>
+            <ul >
+                <li class="head">Menu</li>
                 <li><a href="#Home">Home</a></li>
                 <li><a href="">About</a></li>
                 <li><a href="">Order</a></li>
                 <li><a href="">Contact</a></li>
                 <li><a href="login.php" class="login">Masuk/Daftar</a></li>
             </ul>
+            <div class="humberger">
+                <span></span><span></span><span></span>
+            </div>
         </nav>
         <main>
             <p>Nikmati Perjalanan Anda <br> Bersama Kami</p>
@@ -26,6 +30,7 @@
             <a href="">Berangkat Sekarang!</a>
             <div class="wadah">
                 <div class="garis"></div>
+                <div class="garis garis2"></div>
             </div>
         </main>
         <figure class="hiasan">
@@ -63,5 +68,7 @@
             </ul>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

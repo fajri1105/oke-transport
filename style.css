@@ -18,9 +18,11 @@ body{
     color: white;
     font-family: 'Montserrat';
     position: relative;
+    overflow: hidden;
 }
 #home nav{
-    padding: 1rem 3rem;
+    width: 100%;
+    padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -30,14 +32,17 @@ body{
 }
 #home ul {
     display: flex;
-    width: 35%;
     justify-content: space-between;
     list-style: none;
+}
+#home ul li.head{
+    display: none;
 }
 #home ul li a{
     color: white;
     text-decoration: none;
     font-size: 1rem;
+    margin-right: 3vw;
 }
 #home ul li a.login{
     padding: .3em .7em;
@@ -48,6 +53,18 @@ body{
 }
 #home ul li a.login:hover{
     background-color: rgb(52, 255, 38);
+}
+#home nav .humberger{
+    width: 28px;
+    height: 25px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#home nav .humberger span{
+    width: 100%;
+    height: 3px;
+    background-color: white;
 }
 #home main{
     padding: 4rem;
@@ -90,12 +107,18 @@ body{
     width: 300px;
     height: 10px;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 #home main .wadah .garis{
     width: 60px;
     height: 3px;
     background-color: rgb(255, 255, 255);
     animation: garis 2s ease infinite;
+}
+#home main .wadah .garis.garis2{
+    animation: garis 2s .2s ease infinite;
 }
 @keyframes garis{
     0%{
@@ -111,7 +134,7 @@ body{
     }
 }
 #home figure.hiasan img{
-    width: 300px;
+    width: 26vw;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -127,6 +150,7 @@ body{
     font-family: 'Montserrat';
     font-weight: bold;
     align-items: center;
+    overflow: hidden;
 }
 #about .kiri p{
     font-size: 3.2rem;
@@ -149,6 +173,7 @@ footer{
     font-family: 'Montserrat';
     background-color: rgb(0, 0, 0);
     color: white;
+    overflow: hidden;
 }
 footer .kiri{
     width: 50%;
@@ -171,4 +196,104 @@ footer .kanan ul li a{
     color: white;
     text-decoration: none;
     line-height: 2em;
+}
+
+
+@media screen and (max-width:760px) {
+    #home nav{
+        padding: 1rem .3rem;
+    }
+    #home nav ul li a{
+        margin-right: .8rem;
+    }
+    footer {
+        flex-direction: column;
+    }
+    footer .kiri{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}
+@media screen and (max-width: 570px){
+    #home nav{
+        padding: 1rem 1rem;
+    }
+    #home nav ul{
+        position: absolute;
+        flex-direction: column;
+        justify-content: start;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 70%;
+        transition: 1s;
+        transform: translateX(105%);
+        z-index: 999;
+        background-color: rgba(1, 1, 1, 0);
+        padding: 1rem;
+        padding-top: 0;
+        border-left: 2px solid rgb(33, 223, 19);
+    }   
+    #home nav ul.muncul{
+        animation: muncul 1s ease forwards;
+    }
+    @keyframes muncul{
+        0%{
+        transform: translateX(105%);
+        background-color: rgba(1, 1, 1, 0);
+        }
+        100%{
+        transform: translateX(0);
+        background-color: rgba(1, 1, 1, 0.954);
+        }
+    }
+    #home nav ul li.head{
+        display: block;
+        font-size: 2rem;
+        font-weight: bold;
+        color: rgb(33, 223, 19);
+    }
+    #home nav ul li a.login{
+        font-weight: normal;
+        padding: inherit;
+        background-color: rgba(0, 0, 0, 0);
+    }
+    #home nav ul li{
+        margin-top: 1.8rem;
+    }
+    #home nav ul li a{
+        font-size: 1.2rem;
+    }
+    #home nav .humberger{
+        display: flex;
+        z-index: 9999;
+    }
+    #home main{
+    margin: 1rem;
+    padding: 0;
+    }
+    #home main p{
+        font-size: 2.3rem;
+    }
+    #home main h2{
+        font-size: 3.3rem;
+    }
+    #about{
+        padding: 1rem;
+    }
+    #about .kiri p{
+        font-size: 2rem;
+    }
+    #about .kiri .jumlah{
+        font-size: 3rem;
+    }
+    footer{
+        padding: 1rem;
+    }
+    footer h1{
+        font-size: 2.1rem;
+    }
+    footer h2{
+        font-size: 1.3rem;
+    }
 }
