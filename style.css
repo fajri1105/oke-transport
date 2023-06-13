@@ -1,0 +1,174 @@
+
+root{
+    --hijauUtama : rgb(4, 54, 0);
+}
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    width: 100%;
+    height: 100%;
+}
+#home{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    font-family: 'Montserrat';
+    position: relative;
+}
+#home nav{
+    padding: 1rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#home .logo img{
+    width: 100px;
+}
+#home ul {
+    display: flex;
+    width: 35%;
+    justify-content: space-between;
+    list-style: none;
+}
+#home ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+#home ul li a.login{
+    padding: .3em .7em;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: rgb(33, 223, 19);
+
+}
+#home ul li a.login:hover{
+    background-color: rgb(52, 255, 38);
+}
+#home main{
+    padding: 4rem;
+    padding-left: 0;
+    margin-left: 4rem;
+    padding-top: 80px;
+    overflow: hidden;
+}
+#home main p{
+    font-size: 2.7rem;
+}
+#home main h2{
+    font-size: 4.5rem;
+    color: rgb(33, 223, 19);
+    margin-bottom: 1.5rem;
+    animation: judul 8s infinite;
+}
+@keyframes judul{
+    0%{
+        transform: translateX(-600px);
+    }
+    10%{
+        transform: translateX(0);
+    }
+}
+#home main a{
+    padding: .5rem .8rem;
+    font-size: 1.2rem;
+    background-color: white;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    border-radius: 10px;
+}
+#home main a:hover{
+    background-color: rgb(12, 165, 0);
+}
+#home main .wadah{
+    margin-top: 3rem;
+    width: 300px;
+    height: 10px;
+    overflow: hidden;
+}
+#home main .wadah .garis{
+    width: 60px;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    animation: garis 2s ease infinite;
+}
+@keyframes garis{
+    0%{
+        transform: translateX(-60px);
+        width: 20px;
+    }
+    50%{
+        width: 100px;
+    }
+    100%{
+        transform: translateX(300px);
+        width: 20px;
+    }
+}
+#home figure.hiasan img{
+    width: 300px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+
+#about{
+    height: 100vh;
+    background-color: rgb(4, 54, 0);
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    align-items: center;
+}
+#about .kiri p{
+    font-size: 3.2rem;
+    line-height: 1.3em;
+    color: rgb(33, 223, 19);
+}
+#about .kiri p.jumlah{
+    color: white;
+    font-size: 6rem;
+}
+#about .kiri p.penumpang{
+    color: white;
+    margin-top: -1.5rem;
+    margin-bottom: 1.2rem;
+}
+
+footer{
+    display: flex;
+    padding: 1rem 2rem;
+    font-family: 'Montserrat';
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+footer .kiri{
+    width: 50%;
+}
+footer h1{
+    font-size: 2.4rem;
+    color: rgb(255, 255, 255);
+}
+footer h2{
+    font-weight: 300;
+}
+footer .kiri p{
+    font-weight: 300;
+    margin-top: 1rem;
+}
+footer .kanan ul{
+    list-style: none;
+}
+footer .kanan ul li a{
+    color: white;
+    text-decoration: none;
+    line-height: 2em;
+}
