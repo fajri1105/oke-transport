@@ -40,7 +40,7 @@ body{
     font-size: .9rem;
     margin-top: 2rem;
 }
-.container form label.ingat{
+.container form label.ingatT{
     display: inline;
 }
 .container form input{
@@ -59,11 +59,19 @@ body{
     border: none;
     outline: 1px solid rgb(12, 165, 0);
 }
-
-.container form #ingat{
+.container form .ingat{
+    cursor: pointer;
     background-color: rgba(250, 235, 215, 0);
-    width: fit-content;
+    margin : 0;
     display: inline-block;
+    appearance:unset;
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgb(12, 165, 0);
+    border-radius: 50%;
+}
+.container form .ingat:checked{
+    background-color: rgb(12, 165, 0);
 }
 .tombol{
     margin-top: 2rem;

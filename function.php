@@ -40,4 +40,21 @@
         }
         else return 'error2';
     }
+
+    function baca($query){
+        global $db;
+        $result = mysqli_query($db, $query);
+        $datas = [];
+        while ($row = mysqli_fetch_assoc($result)){
+            $datas[] = $row;
+        }
+        return $datas;
+    }
+
+    function bacaWhere($data){
+        global $db;
+        $result = mysqli_query($db, $data);
+        $row = mysqli_fetch_assoc($result);
+        return $row;
+    }
 ?>
