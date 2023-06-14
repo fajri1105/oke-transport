@@ -1,11 +1,13 @@
 <?php 
+session_start();
 require 'function.php';
     if(isset($_POST["masuk"])){
         if(masuk($_POST) == 'error1'){
             $error = 'email tidak ditemukan';
         }
         else if(masuk($_POST) == 'berhasil'){
-            header("Location: index.php", true, 301);
+            $_SESSION["login"] = true;
+            header("Location: pengguna.php", true, 301);
             exit();
         }
         else{

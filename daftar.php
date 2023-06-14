@@ -21,7 +21,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="masuk.css">
+    <link rel="stylesheet" href="daftar.css">
     <title>Daftar</title>
 </head>
 <body>
@@ -39,6 +39,10 @@
             <input type="password" id="password" name="password" placeholder="password" required>
             <label for="password2">Konfirmasi Password :</label>
             <input type="password" id="password2" name="password2" placeholder="konfirmasi password" required>
+            <input type="radio" class="status" id="pengguna" value="pengguna" name="status" required>
+            <label for="pengguna" class="ket">Pengguna</label>
+            <input type="radio" class="status" id="driver" value="driver" name="status">
+            <label for="driver" class="ket">Driver</label>
             <div class="tombol">
                 <button name="daftar" type="submit">Daftar</button>
             </div>

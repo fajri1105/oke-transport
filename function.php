@@ -7,6 +7,7 @@
         $password = mysqli_real_escape_string($db, $data["password"]);
         $password2 = mysqli_real_escape_string($db, $data["password2"]);
         $nama = htmlspecialchars($data["nama"]);
+        $status = $data["status"];
 
         $cek = mysqli_query($db, "SELECT email FROM user WHERE email = '$email'");
         if(mysqli_num_rows($cek) > 0){
@@ -16,8 +17,9 @@
             return 'error2';
         }
 
+
         $password = password_hash($password, PASSWORD_DEFAULT);
-        $perintah = "INSERT INTO `user` (`id`, `nama`, `email`, `password`) VALUES ('', '$nama', '$email', '$password')";
+        $perintah = "INSERT INTO `user` (`id`, `nama`, `email`, `password`, `status`) VALUES ('', '$nama', '$email', '$password', '$status')";
         mysqli_query($db, $perintah);
         return 'berhasil';
     }
