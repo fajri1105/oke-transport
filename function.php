@@ -19,7 +19,7 @@
 
 
         $password = password_hash($password, PASSWORD_DEFAULT);
-        $perintah = "INSERT INTO `user` (`id`, `nama`, `email`, `password`, `status`) VALUES ('', '$nama', '$email', '$password', '$status')";
+        $perintah = "INSERT INTO `user` (`id`, `nama`, `email`, `password`, `status`, `saldo`) VALUES ('', '$nama', '$email', '$password', '$status', 'saldo')";
         mysqli_query($db, $perintah);
         return 'berhasil';
     }

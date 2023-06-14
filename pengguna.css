@@ -1,0 +1,132 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+  background-color: rgb(4, 54, 0);
+  padding: 1rem;
+  font-family: 'montserrat', sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+}
+header form button{
+    border: none;
+    background-color: rgb(12, 165, 0);
+    color: white;
+    font-weight: bold;
+    padding: .3rem .5rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.logo {
+  width: 14vw;
+}
+main{
+    display: flex;
+    padding: 2rem 0;
+    padding: 2rem;
+    gap: 1rem;
+}
+main .kiri{
+    width: 50%;
+}
+main .kanan{
+    width: 50%;
+}
+
+main .kiri p{
+    color: white;
+    font-size: 1.7rem;
+    margin-bottom: .2rem;
+}
+main .kiri p span{
+    font-weight: bold;
+    font-size: 2rem;
+    color: rgb(12, 165, 0);
+}
+main .kiri p.bawah{
+    font-weight: bold;
+    margin-bottom: 1.3rem;
+}
+main .kiri a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: rgb(12, 165, 0);
+    font-size: 1.5rem;
+    padding: .1em 1em;
+    text-align: center;
+    width: 230px;
+    border-radius: 20px;
+    display: inline-block;
+}
+main .kiri a:hover{
+    background-color: rgb(44, 205, 33);
+}
+main .kanan .card{
+    width: 230px;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: auto;
+}
+main .kanan .card .judul h3{
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: 80%;
+    text-align: center;
+}
+main .kanan .card .judul a{
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+main .kanan .card .judul{
+    padding: .5rem 1rem;
+    background-color: rgb(12, 165, 0);
+    color: white;
+}
+main .kanan .card .saldo{
+    color: rgb(4, 54, 0);
+    height: 100px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.riwayat{
+    width: 100%;
+    padding: 2rem;
+    margin: auto;
+    box-sizing: border-box;
+}
+.riwayat h3{
+    color: white;
+    font-size: 1.5rem;
+}
+.riwayat table{
+    margin-top: 1rem;
+}
+.riwayat table .head th{
+    background-color: rgb(12, 165, 0);
+    color: white;
+    text-align: start;
+    padding: .3rem 1rem;
+}
+.riwayat table td{
+    padding: .2rem 1rem;
+    text-align: start;
+}
+.riwayat table tr td{
+    border-bottom: 1px solid rgb(12, 165, 0);
+    color: white;
+}
+

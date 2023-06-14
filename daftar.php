@@ -31,6 +31,7 @@
             <p class="error"><i><?=$error?></i></p>
         <?php endif?>
         <form action="" method="post" >
+            <input type="hidden" value="0" name="saldo">
             <label for="nama">Nama :</label>
             <input type="nama" id="nama" name="nama" placeholder="nama lengkap" required>
             <label for="email">Email :</label>

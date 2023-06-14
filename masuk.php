@@ -8,6 +8,8 @@ if(isset($_COOKIE["###"])){
     $email = hash('sha256', $data["email"]);
     if($_COOKIE["###"] == $email){
         $_SESSION["login"] = true; 
+        $_SESSION["status"] = $data["status"];
+        $_SESSION["email"] = $data["email"];
     }
 }
 if(isset($_SESSION["login"])){
@@ -23,11 +25,14 @@ if(isset($_SESSION["login"])){
         }
         else if(masuk($_POST) == 'berhasil'){
             $_SESSION["login"] = true;
+            $email = $_POST["email"];
+            $data = bacaWhere("SELECT * FROM user WHERE email = '$email'");
+            $_SESSION["status"] = $data["status"];
+            $_SESSION["email"] = $data["email"];
             if(isset($_POST["ingat"])){
-                $email = $_POST["email"];
-                $data = bacaWhere("SELECT * FROM user WHERE email = '$email'");
                 $id = $data["id"] + 2;
                 $email = hash('sha256', $email);
+                $status = $data["status"];
                 setcookie("##", $id, time() + 3600);
                 setcookie("###", $email, time() + 3600);
             }
