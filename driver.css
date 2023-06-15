@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'montserrat', sans-serif;
+    box-sizing: border-box;
+    padding:2rem;
+    width: 100%;
+    background-color: rgb(4, 54, 0);
+}
+main{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+main .data3 img{
+    width: 130px;
+}
+main .data1{
+    color: white;
+    font-size: 1.4rem;
+}
+main .data1 p span{
+    color: rgb(12, 165, 0);
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+main .data1 p.bawah{
+    font-weight: bold;
+}
+main .data1 .card{
+    margin-top: 2rem;
+    background-color: white;
+    color: rgb(4, 54, 0);
+    border-radius: 15px;
+    overflow: hidden;
+}
+main .data1 .card h3{
+    background-color: rgb(12, 165, 0);
+    font-size: 1.3rem;
+    text-align: center;
+    padding: .3rem;
+}
+main .data1 .card p {
+    font-weight: bold;
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 1rem;
+}
+main .data2 h2{
+    color: rgb(12, 165, 0);
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+main .data2 table{
+    margin-bottom: 1rem;
+}
+main .data2 table tr {
+    text-align: left;
+    color: white;
+    font-size: 1.2rem;
+}
+main .data2 table tr td {
+    padding: .3rem;
+}
+main .data2 a{
+    color: rgb(4, 54, 0);
+    font-weight: bold;
+    padding: .3rem .6rem;
+    border-radius: 15px;
+    background-color: rgb(12, 165, 0);
+    text-decoration: none;
+}
+.ruangKelola{
+    color: white;
+    margin-top: 3rem;
+}
+.ruangKelola h1{
+    border-bottom: 2px solid rgb(12, 165, 0);
+    padding-bottom: .5rem;
+}
+.ruangKelola table tr th{
+    font-size: 1.2rem;  
+}
+.ruangKelola table tr th, .ruangKelola table tr td{
+    text-align: start;
+    padding: .3rem .6rem;
+    border-bottom: 1px solid rgb(12, 165, 0);
+}
