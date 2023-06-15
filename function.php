@@ -8,6 +8,7 @@
         $password2 = mysqli_real_escape_string($db, $data["password2"]);
         $nama = htmlspecialchars($data["nama"]);
         $status = $data["status"];
+        $saldo = $data["saldo"];
 
         $cek = mysqli_query($db, "SELECT email FROM user WHERE email = '$email'");
         if(mysqli_num_rows($cek) > 0){
@@ -19,7 +20,7 @@
 
 
         $password = password_hash($password, PASSWORD_DEFAULT);
-        $perintah = "INSERT INTO `user` (`id`, `nama`, `email`, `password`, `status`, `saldo`) VALUES ('', '$nama', '$email', '$password', '$status', 'saldo')";
+        $perintah = "INSERT INTO `user` (`id`, `nama`, `email`, `password`, `status`, `saldo`) VALUES ('', '$nama', '$email', '$password', '$status', '$saldo')";
         mysqli_query($db, $perintah);
         return 'berhasil';
     }
