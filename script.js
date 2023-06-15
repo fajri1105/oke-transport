@@ -3,3 +3,4 @@ humberger.addEventListener('click', function(){
     const ul = document.querySelector('#home nav ul');
     ul.classList.toggle('muncul');
 })
+

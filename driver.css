@@ -65,13 +65,31 @@ main .data2 table tr {
 main .data2 table tr td {
     padding: .3rem;
 }
-main .data2 a{
+main .data2 .editData{
+    width: fit-content;
     color: rgb(4, 54, 0);
     font-weight: bold;
     padding: .3rem .6rem;
     border-radius: 15px;
     background-color: rgb(12, 165, 0);
     text-decoration: none;
+    cursor: pointer;
+}
+main .data2 .edit{
+    padding-bottom: 1rem;
+    display: none;
+}
+main .data2 .edit.muncul{
+    display: block;
+}
+main .data3 form button{
+    background-color: rgb(12, 165, 0);
+    border: none;
+    color: white;
+    padding: .3rem .5rem;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-bottom: 1rem;
 }
 .ruangKelola{
     color: white;

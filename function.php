@@ -21,7 +21,9 @@
 
         $password = password_hash($password, PASSWORD_DEFAULT);
         $perintah = "INSERT INTO `user` (`id`, `nama`, `email`, `password`, `status`, `saldo`) VALUES ('', '$nama', '$email', '$password', '$status', '$saldo')";
+        $perintah2 = "INSERT INTO `driver` (`id`, `email`, `nama`, `jurusan`, `tarif`, `saldo`) VALUES ('', '$email', '$nama', '-', 0, 0)";
         mysqli_query($db, $perintah);
+        mysqli_query($db, $perintah2);
         return 'berhasil';
     }
 
@@ -57,5 +59,21 @@
         $result = mysqli_query($db, $data);
         $row = mysqli_fetch_assoc($result);
         return $row;
+    }
+
+    //edit data driver
+    function editDriver($data){
+        global $db;
+        $email = $data['email'];
+        $data1 = $data["edit1"];
+        $data2 = $data["edit2"];
+
+        mysqli_query($db, "SELECT * FROM driver WHERE email = '$email'");
+        if($data1 == "tarif"){
+            mysqli_query($db, "UPDATE driver SET tarif = $data2");
+        }
+        else{
+            mysqli_query($db, "UPDATE driver SET jurusan = '$data2'");
+        }
     }
 ?>
